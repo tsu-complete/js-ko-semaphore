@@ -1,0 +1,37 @@
+{
+  "name": "js-ko-semaphore",
+  "version": "1.0.0",
+  "description": "exclusive observables for knockout",
+  "main": "semaphore.js",
+  "scripts": {
+    "prelint": "test -z $(command -v jshint)\"\" && npm i -g jshint || true",
+    "lint": "jshint *.js test/*.js || true",
+    "predocs": "test -z $(command -v jsdoc)\"\" && npm i -g jsdoc || true",
+    "docs": "jsdoc *.js readme.md || true",
+    "pretest": "test -z $(command -v mocha)\"\" && npm i -g mocha || true",
+    "test": "mocha -r test/setup.js -R tap test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsu-complete/js-ko-semaphore.git"
+  },
+  "keywords": [
+    "ko",
+    "knockout",
+    "exclusive",
+    "semaphore"
+  ],
+  "author": "tsukumo",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/tsu-complete/js-ko-semaphore/issues"
+  },
+  "homepage": "https://github.com/tsu-complete/js-ko-semaphore",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.4"
+  },
+  "dependencies": {
+    "knockout": "^3.3.0"
+  }
+}
