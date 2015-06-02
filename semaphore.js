@@ -43,7 +43,7 @@
     /**
      * creates an observable which behaves as a mutex
      * @static
-     * @memberOf ko
+     * @memberof ko
      * @function mutex
      * @param {Boolean} initial=false starting value
      * @return {Object} observable with functionality
@@ -115,7 +115,7 @@
     /**
      * creates an observable which behaves as a semaphore
      * @static
-     * @memberOf ko
+     * @memberof ko
      * @function semaphore
      * @param {Number} initial=1 starting value
      * @param {Boolean} strict=false semaphore will be top bound as well
